@@ -27,6 +27,3 @@ Here are the screenshots:
 - **Pull**
 ![Screenshot](/images/pull.png)
 
-
-
-Test: I will commit this and use the revert command to demonstrate how it works.
