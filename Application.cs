@@ -12,6 +12,7 @@ class Application
         TempConverter,
         EncryptDecrypt,
         CompoundInterest,
+        Counter,
         Quit,
     }
 
@@ -30,7 +31,8 @@ class Application
                 Console.WriteLine("2. Temperature Converter");
                 Console.WriteLine("3. Encrypt/Decrypt Message");
                 Console.WriteLine("4. Compound Interest Calculator");
-                Console.WriteLine("5. Quit");
+                Console.WriteLine("5. Character + World Counter");
+                Console.WriteLine("6. Quit");
 
                 Console.Write("\nChoice: ");
                 programIndex = (Program)(Console.ReadKey().KeyChar - '0');
@@ -77,6 +79,7 @@ class Application
             Program.TempConverter => new TempProgram(),
             Program.EncryptDecrypt => new EncryptProgram("key.txt"),
             Program.CompoundInterest => new CIProgram(),
+            Program.Counter => new CounterProgram(),
             Program.Quit => null,
             _ => null,
         };
