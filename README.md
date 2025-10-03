@@ -13,17 +13,20 @@ The program contains a collection of **5 simple console applications**, namely:
 4. **Compound Interest Calculator** – Computes compound interest given principal, rate, and time.  
 5. **Character + Word Counter** – Counts the number of words and characters in a given text. 
 
-Activity 2: Git Commands  
+## Activity 2: Git Commands  
 
 For this activity, I used the command-line interface to demonstrat 4 basic **Git commands**.  
 Here are the screenshots:
 
-- **Commit**  
+### **Commit**  
 ![Screenshot](/images/commit.png)
 
-- **Push**  
+### **Push**  
 ![Screenshot](/images/push.png)
 
-- **Pull**
+### **Pull**
 ![Screenshot](/images/pull.png)
 
+### **Revert**
+![Screenshot](/images/revert-1.png)
+![Screenshot](/images/revert-2.png)
