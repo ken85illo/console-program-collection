@@ -11,6 +11,7 @@ class Application
         Morse = 1,
         TempConverter,
         EncryptDecrypt,
+        CompoundInterest,
         Quit,
     }
 
@@ -28,7 +29,8 @@ class Application
                 Console.WriteLine("1. Text-to-Morse Translator");
                 Console.WriteLine("2. Temperature Converter");
                 Console.WriteLine("3. Encrypt/Decrypt Message");
-                Console.WriteLine("4. Quit");
+                Console.WriteLine("4. Compound Interest Calculator");
+                Console.WriteLine("5. Quit");
 
                 Console.Write("\nChoice: ");
                 programIndex = (Program)(Console.ReadKey().KeyChar - '0');
@@ -74,6 +76,7 @@ class Application
             Program.Morse => new MorseProgram(),
             Program.TempConverter => new TempProgram(),
             Program.EncryptDecrypt => new EncryptProgram("key.txt"),
+            Program.CompoundInterest => new CIProgram(),
             Program.Quit => null,
             _ => null,
         };
