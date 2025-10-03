@@ -9,6 +9,7 @@ class Application
     private enum Program
     {
         Morse = 1,
+        TempConverter,
         Quit,
     }
 
@@ -24,7 +25,8 @@ class Application
                 Console.WriteLine("|==============================|\n");
                 Console.WriteLine("Pick an application:");
                 Console.WriteLine("1. Text-to-Morse Translator");
-                Console.WriteLine("2. Quit");
+                Console.WriteLine("2. Temperature Converter");
+                Console.WriteLine("3. Quit");
 
                 Console.Write("\nChoice: ");
                 programIndex = (Program)(Console.ReadKey().KeyChar - '0');
@@ -68,6 +70,7 @@ class Application
         return program switch
         {
             Program.Morse => new MorseProgram(),
+            Program.TempConverter => new TempProgram(),
             Program.Quit => null,
             _ => null,
         };
